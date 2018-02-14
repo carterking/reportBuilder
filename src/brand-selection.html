@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PrescriptiveIQ Builder</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+            <a class="navbar-brand" href="#">
+                <img src="images/cb-logo.png" class="d-inline-block align-top logo" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/register') }}">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Start Wizard Navigation -->
+    <div class="container">
+        <div class="row bs-wizard" style="border-bottom:0;">
+
+            <div class="col bs-wizard-step complete">
+                <div class="text-center bs-wizard-stepnum">Keyword</div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a href="index.html" class="bs-wizard-dot"></a>
+            </div>
+
+            <div class="col bs-wizard-step complete">
+                <!-- complete -->
+                <div class="text-center bs-wizard-stepnum">Categories</div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a href="cat-selection.html" class="bs-wizard-dot"></a>
+            </div>
+
+            <div class="col bs-wizard-step active">
+                <!-- complete -->
+                <div class="text-center bs-wizard-stepnum">Brands</div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a href="#" class="bs-wizard-dot"></a>
+            </div>
+
+            <div class="col bs-wizard-step disabled">
+                <!-- active -->
+                <div class="text-center bs-wizard-stepnum">Review</div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <a href="#" class="bs-wizard-dot"></a>
+            </div>
+        </div>
+        <!--End Wizard Navigation -->
+
+        <!--Start Brand Selection -->
+        <form>
+            <div class="row justify-content-around">
+                <div class="col-8">
+
+                    <h1>Brand Selection</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Select</th>
+                                <th>Brand</th>
+                                <th>Volume</th>
+                                <th>Percent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-secondary">
+                                <td>
+                                    <select class="form-control match-content">
+                                        <option>Do Not Include</option>
+                                        <option>Client Brand</option>
+                                        <option>Competitor</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p class="form-control-static brand-name">Tide</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-static">18.3M</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-static">71%</p>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>
+                                    <select class="form-control match-content">
+                                        <option>Do Not Include</option>
+                                        <option>Client Brand</option>
+                                        <option>Competitor</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p class="form-control-static brand-name">Gain</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-static">10M</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-static">22%</p>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>
+                                    <select class="form-control match-content">
+                                        <option>Do Not Include</option>
+                                        <option>Client Brand</option>
+                                        <option>Competitor</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p class="form-control-static brand-name">Tide Pods</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-static">0.3M</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-static">51%</p>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>
+                                    <select class="form-control match-content">
+                                        <option>Do Not Include</option>
+                                        <option>Client Brand</option>
+                                        <option>Competitor</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p class="form-control-static brand-name">Great Value</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-static">0.1M</p>
+                                </td>
+                                <td>
+                                    <p class="form-control-static">2%</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <!--End Brand Selection -->
+
+            <!--Start Previous/Next Buttons -->
+            <div class="row">
+                <div class="col prev-next">
+                    <a class="btn btn-secondary float-left" href="cat-selection.html" role="button">Previous</a>
+                    <a class="btn btn-primary float-right" id="brand-selection-next" href="review.html" role="button">Next</a>
+                </div>
+            </div>
+        </form>
+        <!--End Previous/Next Buttons -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
